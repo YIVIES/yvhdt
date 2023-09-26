@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -Wall
+CFLAGS := -Wall -ggdb
 SRC := yvhdt.c\
        output.c\
        create.c

@@ -20,7 +20,6 @@ void output(char **args)
 	while ((srcfile_data = fgetc(srcfile_fp)) != EOF) {
 		fputc(srcfile_data, destvhd_fp);
 	}
-	printf("%ld\n", sizeof(struct hard_disk_footer_fields));
 	goto success;
 success:
 	fclose(destvhd_fp);

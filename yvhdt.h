@@ -1,6 +1,7 @@
 #ifndef __YVHDT_H
 #define __YVHDT_H
 
+#include <time.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -31,9 +32,9 @@ struct hard_disk_footer_fields {
        		char bytes[4];	} creator_version;
 	union { uint32_t value;
        		char bytes[4];	} creator_host_os;
-	union { uint32_t value;
+	union { uint64_t value;
        		char bytes[8];	} original_size;
-	union { uint32_t value;
+	union { uint64_t value;
        		char bytes[8];	} current_size;
 	union { uint32_t value;
        		char bytes[4];	} disk_geometry;
