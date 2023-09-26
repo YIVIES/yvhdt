@@ -1,6 +1,8 @@
 CC := gcc
-CFLAGS := -Wall -g
-SRC := yvhdt.c
+CFLAGS := -Wall
+SRC := yvhdt.c\
+       output.c\
+       create.c
 
 yvhdt: $(SRC)
 	$(CC) $(CFLAGS) $^ -o $@
